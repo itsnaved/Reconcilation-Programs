@@ -1,16 +1,17 @@
 function createDomElements(data) {
     var parentElement = document.getElementById("mainArea");
   
-  
+  // Clear all existing children of the parentElement
     parentElement.innerHTML = '';
   
     let added = 0;
-
+// Process each item in the data array
     data.forEach(function(item) {
       added++;
-   
+
+     // Create a new element
       var childElement = document.createElement("div");
-      childElement.dataset.id = item.id; 
+      childElement.dataset.id = item.id; // Store the ID on the element for future lookups
   
       var grandChildElement1 = document.createElement("span");
       grandChildElement1.innerHTML = item.title
