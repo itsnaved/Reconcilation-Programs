@@ -2,7 +2,7 @@ function createDomElements(data) {
     var parentElement = document.getElementById("mainArea");
     //////////////////////////////////////////////////////
     var currentChildren = Array.from(parentElement.children);
-    console.log(parentElement);
+    console.log(parentElement); 
     console.log(data);
     //////////////////////////////////////////////////////
     let added = 0, deleted = 0, updated = 0;
